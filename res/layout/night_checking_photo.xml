@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/full_bg_gra"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/full_bg_gra"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:src="@drawable/logo_main" />
+
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtphotomenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:text="@string/photomenu"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="25.0dip"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TableRow
+                android:id="@id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@id/btndailyphoto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq1" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq2" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq3" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq5" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq6" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq7" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip" >
+
+                <Button
+                    android:id="@id/btndailyphoto8"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/drpq8" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txtctgenq10"
+                    android:layout_width="140.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nr10"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:hint="CareTaker Name" >
+
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@id/btnback"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="@string/back"
+                    android:background="@drawable/button_selector"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@id/btnphotohindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="       हिंदी"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip" />
+
+                <Button
+                    android:id="@id/btnnext"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/next"
+                    android:layout_marginLeft="20.0dip"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

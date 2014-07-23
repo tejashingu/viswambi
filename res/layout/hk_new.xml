@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/full_bg_gra"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="100.0dip" >
+
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:src="@drawable/logo_main" />
+
+            <TextView
+                android:id="@id/Txthkgen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hkheading"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="25.0dip"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/issue_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             >
+            
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="5.0dip"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="45dp" >
+                 
+                <TextView
+                    android:id="@+id/issue_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="Issue With:"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+                <Spinner 
+                    android:id="@+id/component_spinner1"
+                    android:layout_width="165.0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dp"
+                   	android:spinnerMode="dialog"
+	          />
+              
+               <Spinner 
+                    android:id="@+id/sub_call_type1"
+                    android:layout_width="165.0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dp"
+                   	android:spinnerMode="dialog"
+	          />
+               
+               <Button 
+                   android:id="@+id/add_issue_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10.0dp"
+                   android:onClick="adding_issues"
+                   android:text="+"
+                   />
+                
+            </TableRow>
+                "
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="20.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@id/btnhkback"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/back"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@id/btnhkhindi"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="Hindi हिंदी"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnhknext"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/next"
+                    android:onClick="Next"
+                    android:textColor="#ffffff" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

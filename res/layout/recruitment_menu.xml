@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/full_bg"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@id/imageView1"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_main" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@id/Txtctgenq1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="RECRUITMENT MENU"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="30.0dip" />
+    </TableRow>
+
+    <TableLayout
+        android:id="@id/tb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@id/btnpersonal"
+                android:layout_width="250.0dip"
+                android:layout_height="100.0dip"
+                android:textColor="#ffffff"
+                android:text="ENTER EMPLOYEE DETAILS" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="150.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@id/btnExit"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:textColor="#ffffff"
+            android:text="Back" />
+    </TableLayout>
+
+</LinearLayout>

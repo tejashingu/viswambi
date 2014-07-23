@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/full_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center" >
+
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_main" />
+        </TableRow>
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:layout_gravity="top|center" >
+
+            <TextView
+                android:id="@id/Txtctgenq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DECLARATION"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </TableRow>
+
+        <TextView
+            android:id="@id/editUndertaking"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:state_enabled="false"
+            android:text="@string/declaration"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@id/btnSignature"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Signature" />
+
+            <Button
+                android:id="@id/btnphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="#ffffff"
+                android:text="Passport size photo" />
+
+            <Button
+                android:id="@id/btndocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10.0dip"
+                android:text="Documents Images" />
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow
+                android:id="@id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@id/btnback"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/back" />
+
+                <Button
+                    android:id="@id/btnsync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/sync" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

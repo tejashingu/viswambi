@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">Viswambi</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="y">Yes</string> 
+    <string name="n">No</string>
+    <string name="back">Back</string>
+    <string name="save">Save and Exit</string>
+    <string name="photo">Photo</string>
+    <string name="next">Next</string>
+    
+     <string-array name="sub_type">
+        <item>AC</item>
+        <item >Access Lock</item>
+        <item >ATM</item>
+        <item >Caretaker</item>
+        <item>CCTV</item>
+        <item>Cheque Drop Box</item>
+        <item>Collateral</item>
+        <item>Consumables</item>
+        <item>Door</item>
+        <item>Earthing</item>
+    </string-array>   
+     <string-array name="component">
+        <item>AC</item>
+        <item >Access Lock</item>
+        <item >ATM</item>
+        <item >Caretaker</item>
+        <item>CCTV</item>
+        <item>Cheque Drop Box</item>
+        <item>Collateral</item>
+        <item>Consumables</item>
+        <item>Door</item>
+        <item>Earthing</item>
+        <item>E-Bill</item>
+        <item>Fire Extinguisher</item>
+        <item>Flooring And Ceiling</item>
+        <item>Furnitures</item>
+        <item>Generator</item>
+        <item>Helpdesk related</item>
+        <item>House Keeping</item>
+        <item>Leakage Seepage</item>
+        <item>Lollypop</item>
+        <item>Maintenance Carpentry</item>
+        <item>Maintenance Civil</item>
+        <item>Maintenance Electrical</item>
+        <item>Painting</item>
+        <item>Phones</item>
+        <item>Poster Hangers</item>
+        <item>Security System</item>
+        <item>SEMS</item>
+        <item>Shutter</item>
+        <item>Signgage/Lollypop</item>
+        <item>Stationary</item>
+        <item>Statutory Document</item>
+        <item>Stickers</item>
+        <item>Tamper</item>
+        <item>TV</item>
+        <item>UPS</item>
+        <item>VM</item>
+        <item>MISC</item>
+        <item>Others</item>
+        <item>No additional Issues</item>
+      </string-array>
+    
+    <string name="dailyreport">CARETAKER REPORT</string>
+    
+    <string name="nightReport">NIGHT CHECKING REPORT</string>
+    
+    <string name="drq1">IS CT/SG ALERT? </string>
+    <string name="drq2">IS CT/SG WEARING PROPER UNIFORM WITH ID?</string>
+    <string name="drq3">VENDOR/VISITOR REGISTER MAINTAINED?</string>
+    <string name="drq4">ATTENDENCE REGISTER MAINTAINED?</string>
+    <string name="drq5">CT/SG WORKING FOR MORE THAN 8 HRS AT STRECH?</string>
+    <string name="drq6">SITE CONDITION CLEAN OR NOT</string>
+    <string name="drq7">CT HANDLES CUSTOMERS ISSUES POLITELY?</string>
+    <string name="drq8">IS IMPORTANT NUMBERS DISPLAYED AT SITE?</string>
+    <string name="drq9">IS ATM DOWN FOR MORE THAN 12HRS DUE TO ANY MAJOR PROBLEM?</string>
+    <string name="nr10">Name of Site Supervisor at the time of Night Checking</string>
+    
+   <!--  <string name="drq1">IS CT PRESENT AT SITE? </string>
+    <string name="drq2">IS CT WEARING ID CARD?</string>
+    <string name="drq3">IS CT WEARING PROPER UNIFORM?</string>
+    <string name="drq4">VENDOR VISITS REGISTER MAINTAINED?</string>
+    <string name="drq5">ATTENDENCE REGISTER MAINTAINED?</string>
+    <string name="drq6">BREAKS REGISTER MAINTAINED?</string>
+    <string name="drq7">CT WORKING FOR MORE THAN 12 HRS AT STRECH?</string>
+    <string name="drq8">CT TELEPHONE WORKING?</string>
+    <string name="drq9">CT KEEPS SITE CLEAN?</string> 
+    <string name="drq10">CT HANDLES CUSTOMERS ISSUES POLITELY?</string>
+    <string name="drq11">DOES CT KNOW WHERE TO DEPOSIT CASH AND CHEQUE?</string>
+    <string name="drq12">DOES CT POLITELY HEPS CUSTOMER WITH USE OF ATM?</string>
+    <string name="drq13">DOES CT ENSURE ONLY ONE PERSON PER ATM MACHINE?</string>
+    <string name="drq14">IS COMPANY PROVIDED LOGBOOK AVAILABLE AT SITE?</string>
+    <string name="drq15">IMPORTANT NUMBERS DISPLAYED IN THE ATM?</string>
+    <string name="drq16">IS ATM DOWN FOR MORE THAN 12HRS DUE TO ANY MAJOR PROBLEM?</string> -->
+    
+    <string name="photomenu">PHOTOGRAPH MENU</string>
+    <string name="drpq1">PHOTO OF ATM MACHINE</string>
+    <string name="drpq2">CARETAKER PHOTO WITH COMPLETE UNIFORM AND ID</string>
+    <string name="drpq3">PHOTO OF FLOOR</string>
+    <string name="drpq4">PHOTO OF BACKROOM</string>
+    <string name="drpq5">PHOTO OF RIGHT WALL</string>
+    <string name="drpq6">PHOTO OF LEFT WALL</string>
+    <string name="drpq7">ATM MACHINE TOP CLEAN PHOTO</string>
+    <string name="drpq8">"PHOTO OF CEILING</string>
+    
+    <string name="hkheading">HOUSEKEEPING REPORT</string>
+    <string name="hk1">ISSUE RELEATED WITH AC</string>
+    <string name="hk2">ISSUE RELEATED WITH ACCESS LOOK</string>
+    <string name="hk3">ISSUE RELEATED WITH ATM</string>
+    <string name="hk4">ISSUE RELEATED WITH CARETAKER</string>
+    <string name="hk5">ISSUE RELEATED WITH CCTV</string>
+    <string name="hk6">ISSUE RELEATED WITH CHEQUE DROP BOX</string>
+    <string name="hk7">ISSUE RELEATED WITH COLLATERAL</string>
+    <string name="hk8">ISSUE RELEATED WITH CONSUMABLES</string>
+    <string name="hk9">ISSUE RELEATED WITH DOOR</string>
+    <string name="hk10">ISSUE RELEATED WITH EARTHING</string>
+    <string name="hk11">ISSUE RELEATED WITH E-BILL</string>
+    <string name="hk12">ISSUE RELEATED WITH FIRE EXTINGUISHER</string>
+    <string name="hk13">ISSUE RELEATED WITH FLOORING AND CEILING</string>
+    <string name="hk14">ISSUE RELEATED WITH FURNITURES</string>
+    <string name="hk15">ISSUE RELEATED WITH GENERATOR</string>
+    <string name="hk16">ISSUE RELEATED WITH HELPDESK RELATED</string>
+    <string name="hk17">ISSUE RELEATED WITH HOUSEKEEPING</string>
+    <string name="hk18">ISSUE RELEATED WITH LEAKAGE SEEPAGE</string>
+    <string name="hk19">ISSUE RELEATED WITH LOLLYPOP</string>
+    <string name="hk20">ISSUE RELEATED WITH MAINTENANCE CARPENTRY</string>
+    <string name="hk21">ISSUE RELEATED WITH MAINTENANCE CIVIL</string>
+    <string name="hk22">ISSUE RELEATED WITH MAINTENANCE ELECTRICAL</string>
+    <string name="hk23">ISSUE RELEATED WITH PAINITNG</string>
+    <string name="hk24">ISSUE RELEATED WITH PHONES</string>
+    <string name="hk25">ISSUE RELEATED WITH POSTER HANGERS</string>
+    <string name="hk26">ISSUE RELEATED WITH SECURITY SYSTEM</string>
+    <string name="hk27">ISSUE RELEATED WITH SEMS</string>
+    <string name="hk28">ISSUE RELEATED WITH SHUTTER</string>
+    <string name="hk29">ISSUE RELEATED WITH SINGAGE</string>
+    <string name="hk30">ISSUE RELEATED WITH STATIONARY</string>
+    <string name="hk31">ISSUE RELEATED WITH STATIONARY DOCUMENT</string>
+    <string name="hk32">ISSUE RELEATED WITH STICKERS</string>
+    <string name="hk33">ISSUE RELEATED WITH TAMPER</string>
+    <string name="hk34">ISSUE RELEATED WITH TV</string>
+    <string name="hk35">ISSUE RELEATED WITH UPS</string>
+    <string name="hk36">ISSUE RELEATED WITH VM</string>
+    <string name="hk37">ISSUE RELEATED WITH MISC</string>
+    <string name="hk38">ISSUE RELEATED WITH OTHERS</string>
+    <string name="hk39">NO ADDITIONAL ISSUES</string>
+    
+    
+    
+    <string name="hkq1">SIGNAGE/LOLLYPOP CLEAN</string>
+    <string name="hkq2">SIGNAGE BOARD WORKING</string>
+    <string name="hkq3">COBWEB BELOW SIGN BOARD</string>
+    <string name="hkq4">STAINS ON GLASS AND MAIN DOOR</string>
+    <string name="hkq5">STAINS ON FLOOR MACHINE</string>
+    <string name="hkq6">CEILING CLEALINESS</string>
+    <string name="hkq7">CEILING COBWEB</string>
+    <string name="hkq8">STAIN ON LEFT HAND SIDE AND RIGHT HAND SIDE WALL</string>
+    <string name="hkq9">STAIN ON BACKROOM PARTITION</string>
+    <string name="hkq10">CLEANLINESS ON FLOOR</string>
+    <string name="hkq11">DUST BEHING POSTER FRAME</string>
+    <string name="hkq12">DUST ABOVE ATM MACHINE</string>
+    <string name="hkq13">DUSTBIN CLEAN</string>
+    <string name="hkq14">DUST ON FIRE EXTINGUISHER</string>
+    <string name="hkq15">CEILING LIGHT FITTING INSECT PRESENT</string>
+    <string name="hkq16">BACKROOM FLOOR CLEANLINESS</string>
+    <string name="hkq17">DUST ON UPS AND BATTERY</string>
+    <string name="hkq18">DOORMAT CLEAN</string>
+    <string name="hkq19">DUST ON AC</string>
+    <string name="hkq20">HOUSEKEEPING MATERIAL</string>
+    <string name="hkq21">LOBBY/SINAGE/LOLLYPOP LIGHT WORKING</string>
+    
+    <string name="hkp1">SIGNAGE FRONT WITH CARETAKER</string>
+    <string name="hkp2">PHOTO OF FLOOR</string>
+    <string name="hkp3">PHOTO OF BACKROOM</string>
+    <string name="hkp4">PHOTO OF RIGHT WALL</string>
+    <string name="hkp5">PHOTO OF LEFT WALL</string>
+    <string name="hkp6">ATM MACHINE TOP CLEAN PHOTO</string>
+    <string name="hkp7">PHOTO OF CEILING</string>
+    
+    <string name="srmmenu">SRM REPORT</string>
+    <string name="srmq1">DOOR ALIGNMENT IS PROPER AND DOOR CLOSURE IS WORKING?</string>
+    <string name="srmq2">GLOW SIGNAGE MAIN AND SMALL IS WORKING?</string>
+    <string name="srmq3">ALL ACS ARE WORKING AND COOLING PROPER</string>
+    <string name="srmq4">WALL, CEILING, PORCH, SHUTTER AND TILES ARE IN GOOD CONDITION</string>
+    <string name="srmq5">ALL ELECTRICAL APPLIANCES (CFL/PL/TUBES/BULBS/FAN/EXHAUST)</string>
+    <string name="srmq6">ANY SEEPAGE/WATER LEAKAGE FROM ABOVE AT ATM SITE?</string>
+    <string name="srmq7">IS CCTV WORKING PROPERLY?</string>
+    <string name="srmq8">IS UPS PROVIDING MORE THAN 1HR BACKUP DURING POWE FAILURE?</string>
+    <string name="srmq9">IS GENSET AVAILABLE AT SITE WITH PROPER CONNECTION?</string>
+    <string name="srmq10">IS GENSET WORKING AND ALLOWED BY SOCIETY</string>
+    <string name="srmq11">IS FIRE EXTINGUISHER WORKING (GREEN INDICATOR)?</string>
+    
+    <string name="srmp1">SRM ISSUE 1</string>
+    <string name="srmp2">SRM ISSUE 2</string>
+    <string name="srmp3">SRM ISSUE 3</string>
+    <string name="srmp4">SRM ISSUE 4</string>
+    
+    <string name="tisheading">TIS REPORT</string>
+    <string name="phasethree">3 PHASE</string>
+    <string name="phaseone">1 PHASE</string>
+    
+    <string name="tis1">SITE MEASUREMENT</string>
+    <string name="tis2">SITE ACCESS FOR V-SAT 24HRS?</string>
+    <string name="tis3">ELECTRICAL METER 3 PHASE OR SINGLE PAHSE</string>
+    <string name="tis4">FLOORING WORK DONE?</string>
+    <string name="tis5">FRAMING WORK DONE?</string>
+    <string name="tis6">AC PIPING WORK DONE?</string>
+    <string name="tis7">WALL PANELLING DONE?</string>
+    <string name="tis8">ACP WALL PANELLING DONE?</string>
+    <string name="tis9">WOOD WALL PANELLING WORD DONE?</string>
+    <string name="tis10">LAMINATE WORK DONE?</string>
+    <string name="tis11">FIXED GLASSING WORK DONE?</string>
+    <string name="tis12">MAIN DOOR FIXING WORK DONE?</string>
+    <string name="tis13">EARTH PIT WORK DONE?</string>
+    <string name="tis14">CEILING WORK DONE?</string>
+    <string name="tis15">CEILING LIGHT WORK DONE?</string>
+    <string name="tis16">BACKROOM PARTITION WORK DONE?</string>
+    <string name="tis17">BACKROOM SELF WORK DONE?</string>
+    <string name="tis18">FIRE EXTINGUISHER PROVIDED?</string>
+    <string name="tis19">DUSTBIN DONE?</string>
+    <string name="tis20">SOFTBOARD DONE?</string>
+    <string name="tis21">DOOR MAT DONE?</string>
+    <string name="tis22">SIGNAGE FIXING DONE?</string>
+    <string name="tis23">SHUTTER BIXING DONE?</string>
+    <string name="tis24">HOOTER WORK DONE?</string>
+    <string name="tis25">AC LOWER WORK DONE?</string>
+    <string name="tis26">MACHINE GROUNTING WORK DONE?</string>
+    <string name="tis27">DB INSTALLATION WORK DONE?</string>
+    
+    <string name="tisp1">PHOTO 1</string>
+    <string name="tisp2">PHOTO 2</string>
+    <string name="tisp3">PHOTO 3</string>
+    <string name="tisp4">PHOTO 4</string>
+    
+    
+     <string name="strctgenq1">Is CT checking ID card of all visitors/officers?</string>
+    <string name="strctgenq2">Does Caretaker know the Dos and Don’ts?</string>
+    <string name="strctgenq3">Is caretaker mentioning all activities in Logbook?</string>
+    <string name="strctgenq4">Is CT aware about where to log call for site related issues?</string>
+    <string name="strctgenq5">Is the CT keeping site clean and clearing dustbin?</string>
+    <string name="strctgenq6">Is Caretaker making note about no. of cheques collected by Cash loading agency?</string>
+    <string name="strctgenq7">Is caretaker doing transaction for the customer?</string>
+    
+    <string name="strctappq1">Is CT wearing full uniform with ID and is shaved?</string>
+    <string name="strctappq2">Is Caretaker available at site in alert position?</string>
+    <string name="strctappq3">Caretaker working for more than 12hrs at Stretch?</string>
+    <string name="strctappq4">Last night round done as per agreed frequency?</string>
+    <string name="strctcommq1">Does CT have company mobile in working condition?</string>
+    <string name="strctcommq2">Does CT mobile have balance for outgoing calls?</string>
+    <string name="strctcommq3">Is company provided Logbook available at site?</string>
+    <string name="strctcommq4">Important numbers displayed in the ATM?</string>
+    <string name="strctcommq5">Is the ATM down for more than 12 hrs due to any major problem ?</string>
+    <string name="strcareq1">Does CT Know about nearest branch/ATM?</string>
+    <string name="strcareq2">Does CT Ensure only One person per ATM machine?</string>
+    <string name="strcareq3">Does CT politely help customer with use of ATM?</string>
+    <string name="strcareq4">Does CT know where to deposit Cash and Cheque?</string>
+    <string name="strcareq5">Does CT ensure customer don’t put cash in drop box?</string>
+    <string name="strcareq6">Is CT able to politely guide customer in case of complaints/issues with ATM/Cash withdrawal?</string>
+    <string name="strcareq7">Is the CT able to handle irate/drunk customers?</string>
+    <string name="strsrmq1">Door alignment is proper and door closure is working ?</string>
+    <string name="strsrmq2">Glow signage (Main and small) is working?</string>
+    <string name="strsrmq3">All AC are working and cooling properly?</string>
+    <string name="strsrmq4">Wall, Ceiling, Porch, Shutter and Tiles are in good condition?</string>
+    <string name="strsrmq5">All Electrical appliances (CFL/ PL/ Tubes/ Bulbs/ Fan/ Exhaust) are working ?</string>
+    <string name="strsrmq6">Any Seepage/water leakage from above at ATM site?</string>
+    <string name="strsrmq7">Is CCTV working properly ?</string>
+    <string name="strsrmq8">Is UPS providing more than 1 hr backup during power failure?</string>
+    <string name="strsrmq9">Is Genset available at site with proper connections?</string>
+    <string name="strsrmq10">Is Genset working and allowed by society?</string>
+    <string name="strsrmq11">Is Fire extinguisher working (Green Indicator)?</string>
+    <string name="strphoto1">Photo of ATM from outside with Signage Board?</string>
+    <string name="strphoto2">Caretaker Photo with complete uniform and ID?</string>
+    <string name="strphoto3">Photo of clean ATM lobby?</string>
+    <string name="strphoto4">Photo of Clean backroom?</string>
+    <string name="strphoto5">Photos of all SRM issues?</string>
+    <string name="strphoto6">Photo of Electricity Bill or any other bills received at site?</string>
+    <string name="strrptsmryq1">Area Officers Name</string>
+    <string name="strrptsmryq2">Assistant Branch Mgr’s name</string>
+    <string name="strrptsmryq3">Branch Manager’s Name</string>
+    <string name="strrptsmryq4">Regional Manager’s Name</string>
+    <string name="strrptsmryq5">Care Taker Name</string>
+    <string name="sync">Upload to Server</string>
+    <string name="sign">Signature</string>
+    <string name="strofficialq1">Post Applied For</string>
+    <string name="strofficialq2">Joining Date</string>
+    <string name="strofficialq3">First Name</string>
+    <string name="strofficialq4">Middle Name</string>
+    <string name="strofficialq5">Last Name</string>
+    <string name="strofficialq6">Mobile Number</string>
+    <string name="strofficialq7">Landline Number</string>
+    <string name="strresidentq1">Room No/Flat no/House No</string>
+    <string name="strresidentq2">Bld /Area/ locality Name</string>
+    <string name="strresidentq3">Taluka /At post/ Area</string>
+    <string name="strresidentq4">Town/ Station /Taluka</string>
+    <string name="strresidentq5">District /City</string>
+    <string name="strresidentq6">Pin Code</string>
+    <string name="strbiobuildq1">Religion</string>
+    <string name="strbiobuildq2">Marital Status</string>
+    <string name="strbiobuildq3">Mother Tongue</string>
+    <string name="strbiobuildq4">Language Known</string>
+    <string name="strbiobuildq5">Educational Qualification</string>
+    <string name="strbiobuildq6">Present Occupation</string>
+    <string name="strbiobuildq7">Total Work Experience (in Yrs.)</string>
+    <string name="strbiobuildq8">Salary/Wages (PM)</string>
+    <string name="strbiodetailq1">Date of Birth</string>
+    <string name="strbiodetailq2">Age</string>
+    <string name="strbiodetailq3">Sex</string>
+    <string name="strbiodetailq4">Height</string>
+    <string name="strbiodetailq5">weight (in Kg)</string>
+    <string name="strbiodetailq6">Birth Mark / ID</string>
+    <string name="declaration">I agree that the information provided here may be processed in connection with my recruitment process and I understand that an offer of employment may be withdrawn or dismissal may result if previous convictions which are not disclosed by me subsequently come to attention of Clear Secured services Ptd. Ltd..I hereby consent to the Clear Secured services Ptd. Ltd. undertaking police and/or social services checks against me.I have read and understood the information leaflet regarding the Policies of Clear Secured services Ptd. Ltd..I hereby confirm that Contents of this form is explained to me in a language understood by me.</string>
+    <string name="menu_settings">Settings</string> 
+    
+
+</resources>

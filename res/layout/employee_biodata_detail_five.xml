@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/full_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left|center" >
+
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:src="@drawable/logo_main" />
+
+            <TextView
+                android:id="@id/Txtctgenq1"
+                android:layout_height="wrap_content"
+                android:text="BIO DATA"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center" >
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="2.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq1"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/strbiobuildq1"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@id/spnbiodata1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq2"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/strbiobuildq2"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@id/spnbiodata2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq3"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/strbiobuildq3"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@id/spnbiodata3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq4"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/strbiobuildq4"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@id/spnbiodata4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq5"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/strbiobuildq5"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@id/spnbiodata5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq6"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/strbiobuildq6"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/strbiobuildq6"
+                    android:inputType="textPostalAddress" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq7"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/strbiobuildq7"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/editworkex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/strbiobuildq7"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txtbiobuildq8"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/strbiobuildq8"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/editText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/strbiobuildq8"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center" >
+
+                <Button
+                    android:id="@id/btnback"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/back" />
+
+                <Button
+                    android:id="@id/btnsave"
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="@string/next" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

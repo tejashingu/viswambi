@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/full_bg_gra"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="100.0dip" >
+
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:src="@drawable/logo_main" />
+
+            <TextView
+                android:id="@id/Txthkgen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hkheading"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="25.0dip"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="25.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@id/Txthkgenq1"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq1Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                
+                <Button
+                    android:id="@id/btnHKq1N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq2"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq2"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq2Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq2N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq3"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq3"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq3Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq3N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq4"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq4"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq4Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq4N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq5"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq5"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq5Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq5N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq6"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq6"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq6Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq6N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq7"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq7"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq7Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq7N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq8"
+                    android:layout_width="250.0dip"
+                    android:layout_height="40.0dip"
+                    android:text="@string/hkq8"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq8Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq8N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq9"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq9"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq9Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq9N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq10"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq10"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq10Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq10N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq11"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq11"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq11Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq11N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq12"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq12"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq12Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq12N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq13"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq13"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq13Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq13N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq14"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq14"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq14Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq14N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq15"
+                    android:layout_width="250.0dip"
+                    android:layout_height="40.0dip"
+                    android:text="@string/hkq15"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq15Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq15N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq16"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq16"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq16Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq16N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq17"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq17"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq17Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq17N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq18"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq18"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq18Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq18N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq19"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq19"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq19Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq19N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq20"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hkq20"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq20Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq20N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <TextView
+                    android:id="@id/Txthkgenq21"
+                    android:layout_width="250.0dip"
+                    android:layout_height="40.0dip"
+                    android:text="@string/hkq21"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnHKq21Y"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/y" />
+
+                <Button
+                    android:id="@id/btnHKq21N"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/n" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="20.0dip" >
+
+            <TableRow
+                android:id="@id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@id/btnhkback"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/back" />
+
+                <TextView
+                    android:id="@id/btnhkhindi"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="Hindi हिंदी"
+                    android:textSize="22.0dip"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@id/btnhknext"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/next" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
