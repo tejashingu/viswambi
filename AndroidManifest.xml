@@ -21,9 +21,9 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar" >
         <activity
-            android:name="com.example.viswambi.SplashScreen"
+            android:name="com.example.viswambi.DailySiteAudit"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,7 +39,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="DailySiteAudit"
+            android:name="SplashScreen"
             android:screenOrientation="landscape" >
         </activity>
         <activity

@@ -2,8 +2,10 @@ package com.example.viswambi;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.http.NameValuePair;
@@ -162,5 +164,37 @@ public class UserFunctions {
 		JSONObject json = jsonParser.getJSONFromUrl(post_data, params);
 		// return json
 		return json;
+	}
+
+	public JSONObject post_daily_audit(HashMap<String, String> map,String institute_id) {
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		 JSONArray arr = new JSONArray();
+		 
+		 Iterator it = map.entrySet().iterator();
+		    while (it.hasNext()) {
+		        HashMap.Entry entry = (HashMap.Entry)it.next();
+		        System.out.println(entry.getKey() + " = " + entry.getValue());
+		        JSONObject answer = new JSONObject();
+		        JSONObject question = new JSONObject();
+		        try {
+					question.put("question",entry.getKey().toString());
+					question.put("answer",entry.getValue().toString());
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		       
+	        }
+	    params.add(new BasicNameValuePair("institute_id", institute_id));
+		params.add(new BasicNameValuePair("type", "2"));
+		params.add(new BasicNameValuePair("user_id", "1"));
+		params.add(new BasicNameValuePair("survey", arr.toString()));
+		
+		System.out.println(params);
+		// getting JSON Object
+		JSONObject json = jsonParser.getJSONFromUrl("asdkajsd", params);
+			// return json
+		return json;
+
 	}
 }

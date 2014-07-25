@@ -1,9 +1,19 @@
 package com.example.viswambi;
 
+import java.util.HashMap;
+import java.util.Iterator;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.example.viswambi.Hk_new.PostData;
+
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +22,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DailySiteAudit extends Activity {
 
@@ -58,6 +69,8 @@ public class DailySiteAudit extends Activity {
 	TextView Txtctgenq7;
 	TextView Txtctgenq8;
 	TextView Txtctgenq9;
+	HashMap<String, String> map;
+	ProgressDialog progressDialog;
 	/*
 	 * TextView Txtctgenq10; TextView Txtctgenq11; TextView Txtctgenq12;
 	 * TextView Txtctgenq13; TextView Txtctgenq14; TextView Txtctgenq15;
@@ -142,7 +155,7 @@ public class DailySiteAudit extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.daily_site_audit);
-
+		map = new HashMap<String, String>();
 		btndailyq1Y = (Button) findViewById(R.id.btndailyq1Y);
 		btndailyq2Y = (Button) findViewById(R.id.btndailyq2Y);
 		btndailyq3Y = (Button) findViewById(R.id.btndailyq3Y);
@@ -230,12 +243,25 @@ public class DailySiteAudit extends Activity {
 				Log.d("DR", "" + a7);
 				Log.d("DR", "" + a8);
 				Log.d("DR", "" + a9);
-
-				Intent i = new Intent(DailySiteAudit.this,
-						DailyReportPhotoUpload.class);
-				startActivity(i);
-
+				if(a1.isEmpty() || a2.isEmpty() || a3.isEmpty() || a4.isEmpty() || a5.isEmpty() || a6.isEmpty() || a7.isEmpty() || a8.isEmpty() ||a9.isEmpty()){
+					
+						System.out.println("Empty");
+				        
+			        }
+				else{
+			        	Iterator it = map.entrySet().iterator();
+					    while (it.hasNext()) {
+				        HashMap.Entry entry = (HashMap.Entry)it.next();
+				        System.out.println(entry.getKey() + " = " + entry.getValue());
+			        }
+				//}
+				
+				//new PostData().execute();
+				//Intent i = new Intent(DailySiteAudit.this,DailyReportPhotoUpload.class);
+				//startActivity(i);
+				} 
 			}
+			
 		});
 
 		btndailyq1Y.setOnClickListener(new OnClickListener() {
@@ -247,6 +273,7 @@ public class DailySiteAudit extends Activity {
 				a1 = "YES";
 				btndailyq1Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a1);
+				map.put("Is CT/SG Alert?", a1);
 
 			}
 		});
@@ -258,6 +285,8 @@ public class DailySiteAudit extends Activity {
 				a2 = "YES";
 				btndailyq2Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a2);
+				map.put("Is CT/SG Wearing Proper Uniform with ID?", a2);
+				
 
 			}
 		});
@@ -270,6 +299,7 @@ public class DailySiteAudit extends Activity {
 				a3 = "YES";
 				btndailyq3Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a3);
+				map.put("Vendor/Visitor Register Maintained?", a3);
 
 			}
 		});
@@ -282,6 +312,7 @@ public class DailySiteAudit extends Activity {
 				a4 = "YES";
 				btndailyq4Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a4);
+				map.put("Attendence Register Maintained?", a4);
 
 			}
 		});
@@ -318,7 +349,7 @@ public class DailySiteAudit extends Activity {
 										a5 = item5[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										map.put("CT/SG Working for More Than 8 Hrs at Stretch", a5);
 										if (selectedPosition == 2) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -353,7 +384,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a5);
-
+																	map.put("CT/SG Working for More Than 8 Hrs at Stretch", a5);
 																}
 															}).show();
 										}
@@ -377,7 +408,7 @@ public class DailySiteAudit extends Activity {
 				a6 = "YES";
 				btndailyq6Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a6);
-
+				map.put("Site Condition Clean or Not", a6);
 			}
 		});
 		btndailyq7Y.setOnClickListener(new OnClickListener() {
@@ -388,6 +419,7 @@ public class DailySiteAudit extends Activity {
 				a7 = "YES";
 				btndailyq7Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a7);
+				map.put("CT Handles Customers Issues Politely?", a7);
 			}
 		});
 		btndailyq8Y.setOnClickListener(new OnClickListener() {
@@ -399,6 +431,7 @@ public class DailySiteAudit extends Activity {
 				a8 = "YES";
 				btndailyq8Y.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a8);
+				map.put("Is Important Numbers Dispalyed at Site? ", a8);
 
 			}
 		});
@@ -435,7 +468,7 @@ public class DailySiteAudit extends Activity {
 										a9 = item9[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										map.put("Is ATM Down for More than 12HRS Due to Any Major Problem? ", a9);
 										if (selectedPosition == 1) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -470,7 +503,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a9);
-
+																	map.put("Is ATM Down for More than 12HRS Due to Any Major Problem? ", a9);
 																}
 															}).show();
 										}
@@ -620,7 +653,7 @@ public class DailySiteAudit extends Activity {
 										a1 = item1[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										map.put("Is CT/SG Alert?", a1);
 										if (selectedPosition == 3) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -656,7 +689,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a1);
-
+																	map.put("Is CT/SG Alert?", a1);
 																}
 															}).show();
 										}
@@ -708,7 +741,7 @@ public class DailySiteAudit extends Activity {
 										a2 = item2[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										map.put("Is CT/SG Wearing Proper Uniform with ID?", a2);
 										if (selectedPosition == 6) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -743,6 +776,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a2);
+																	map.put("Is CT/SG Wearing Proper Uniform with ID?", a2);
 																}
 															}).show();
 										}
@@ -791,6 +825,8 @@ public class DailySiteAudit extends Activity {
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
 
+										map.put("Vendor/Visitor Register Maintained?", a3);
+										
 										if (selectedPosition == 2) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -825,7 +861,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a3);
-
+																	map.put("Vendor/Visitor Register Maintained?", a3);
 																}
 															}).show();
 										}
@@ -873,7 +909,9 @@ public class DailySiteAudit extends Activity {
 										a4 = item4[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										
+										map.put("Attendence Register Maintained?", a4);
+										
 										if (selectedPosition == 2) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -908,7 +946,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a4);
-
+																	map.put("Attendence Register Maintained?", a4);
 																}
 															}).show();
 										}
@@ -932,6 +970,7 @@ public class DailySiteAudit extends Activity {
 				a5 = "NO";
 				btndailyq5N.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a5);
+				map.put("CT/SG Working for More Than 8 Hrs at Stretch", a5);
 
 			}
 		});
@@ -962,6 +1001,7 @@ public class DailySiteAudit extends Activity {
 
 								a6 = input.getText().toString();
 								Log.d("Selected Item", "Item" + a6);
+								map.put("Site Condition Clean or Not", a6);
 
 							}
 						}).show();
@@ -1001,7 +1041,8 @@ public class DailySiteAudit extends Activity {
 										a7 = item7[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										map.put("CT Handles Customers Issues Politely?", a7);
+										
 										if (selectedPosition == 1) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -1036,6 +1077,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a7);
+																	map.put("CT Handles Customers Issues Politely?", a7);
 																}
 															}).show();
 										}
@@ -1083,7 +1125,7 @@ public class DailySiteAudit extends Activity {
 										a8 = item8[selectedPosition];
 										Log.d("Selected Item", "Item_"
 												+ selectedPosition);
-
+										map.put("Is Important Numbers Dispalyed at Site? ", a8);
 										if (selectedPosition == 1) {
 											AlertDialog.Builder alertDialog = new AlertDialog.Builder(
 													DailySiteAudit.this);
@@ -1118,6 +1160,7 @@ public class DailySiteAudit extends Activity {
 																	Log.d("Selected Item",
 																			"Item"
 																					+ a8);
+																	map.put("Is Important Numbers Dispalyed at Site? ", a8);
 																}
 															}).show();
 										}
@@ -1140,10 +1183,61 @@ public class DailySiteAudit extends Activity {
 				a9 = "NO";
 				btndailyq9N.setBackgroundColor(0xFF00FF00);
 				Log.d("", "" + a9);
+				map.put("Is ATM Down for More than 12HRS Due to Any Major Problem? ", a9);
 
 			}
 		});
 
+	}
+	
+	class PostData extends AsyncTask<Void, Void, String> {
+
+		@Override
+		protected void onPreExecute() {
+			// TODO Auto-generated method stub
+			super.onPreExecute();
+			progressDialog = ProgressDialog.show(DailySiteAudit.this, "POSTING",
+					"Please wait...", true, true);
+		}
+
+		@Override
+		protected String doInBackground(Void... params) {
+			// TODO Auto-generated method stub
+
+			
+			String atm_id = "1";
+			
+ 			UserFunctions userFunction = new UserFunctions();
+			try {
+				String institute_id = "1";
+				JSONObject json = userFunction.post_daily_audit(map,institute_id);
+				String survey_id = json.getString("id");
+				
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			// TODO Auto-generated method stub
+			super.onPostExecute(result);
+				progressDialog.dismiss();
+				Log.e("string 1", "enter");
+				// Launch Dashboard Screen
+				Bundle b = new Bundle();
+				//Intent dashboard = new Intent(Hk_new.this,HouseReportPhotoUpload.class);
+				//b.putStringArray("product_shipped", new String[]{result});
+				//dashboard.putExtras(b);
+				//startActivity(dashboard);
+				//finish();
+					
+				
+			}
 	}
 
 }

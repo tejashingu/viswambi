@@ -15,6 +15,7 @@ import com.google.common.collect.Multimap;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -246,16 +247,14 @@ public class Hk_new extends Activity implements OnClickListener, OnItemSelectedL
 		protected String doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 
-			//String question = component1.getSelectedItem().toString();
-			//String answer = sub_call_type_1.getSelectedItem().toString();
+			
 			String atm_id = "1";
-			//HashMap<String, String> map = new HashMap<String, String>();
-			//map.put(component1.getSelectedItem().toString(), sub_call_type_1.getSelectedItem().toString());
-			//String[] fsa = {question};
-			//String[] afaf = {answer};
+			
  			UserFunctions userFunction = new UserFunctions();
 			try {
 				JSONObject json = userFunction.post_data(multiMap,atm_id);
+				String survey_id = json.getString("survey_id");
+				
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -272,10 +271,12 @@ public class Hk_new extends Activity implements OnClickListener, OnItemSelectedL
 				progressDialog.dismiss();
 				Log.e("string 1", "enter");
 				// Launch Dashboard Screen
-				/*Intent dashboard = new Intent(Hk_new.this,
-						HouseReportPhotoUpload.class);
-				startActivity(dashboard);
-				finish();*/
+				Bundle b = new Bundle();
+				//Intent dashboard = new Intent(Hk_new.this,HouseReportPhotoUpload.class);
+				//b.putStringArray("product_shipped", new String[]{result});
+				//dashboard.putExtras(b);
+				//startActivity(dashboard);
+				//finish();
 					
 				
 			}
